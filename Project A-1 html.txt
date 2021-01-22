@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>프로젝트 A-1</title>
+        <link rel="stylesheet" href="프로젝트A-1.css">
+
+        <h1>포트폴리오</h1> 
+    </head>
+    <body>
+        <header>테이블 요소 폼 요소 리스트 요소</header>
+        <section>
+            <h2>구성요소</h2>
+        </section>
+        <section>
+            <h3>테이블 요소</h3>
+            <p>콘텐츠 영역</p>               
+        </section>
+        <section>
+            <h3>폼 요소</h3>
+            <p>콘텐츠 영역</p>
+        </section>
+        <section>
+            <h3>리스트 요소</h3>
+            <p>콘텐츠 영역</p>
+        </section>
+    </body>
+    <footer>
+            주소: 경기도 성남시 분당구, E-MAIL: honggildong@naver.com<br>
+            Copyright © NAVER Corp. All Rights Reserved
+    </footer>
+</html>
