@@ -1,0 +1,26 @@
+header {font-size: 40px; font-weight: bold; 
+    color: #fff; background-color: #000;
+    line-height: 3; width: 1080px; margin: 0; padding-left: 40px;
+}
+
+main {margin: 40px; width: 1000px; color: #000; font-size: 16px; line-height: 2; text-align: center;}
+.table {display: inline-block; border: 1px solid #d1d1d1; width: 300px;}
+.form {display: inline-block; border: 1px solid #d1d1d1; width: 300px; margin-left: 14px; margin-right: 14px;}
+.list {display: inline-block; border: 1px solid #d1d1d1;width: 300px;}
+
+.form:hover {border-color: #454545; font-weight: bold;}
+
+.component {margin-left: 40px; font-size: 20px; font-weight: bold; color: #000; }
+hr {width:1000px; border: 1px solid #454545;}
+
+/*
+main {margin-top: 40px; margin-bottom: 40px;}
+.element {display: inline-block; border: 1px solid #d1d1d1; 
+    width: 300px; height: 33px; font-size: 16px; line-height: 2;
+    text-align: center;}
+
+
+.form {margin-left: 13px; margin-right: 13px;}
+.form:hover {border-color: #454545; font-weight: bold;}
+section {margin-left: 40px; font-size: 20px; font-weight: bold; color: #000;}
+.border {width: 1000px; border: 1px solid #454545}
