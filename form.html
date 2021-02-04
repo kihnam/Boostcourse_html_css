@@ -1,0 +1,35 @@
+<!--form 요소 실습-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>table</title>
+    </head>
+    <body>
+        <form action="www.naver.com">
+            <h1>Form 관련 요소</h1>
+            <fieldset>
+                <legend>필수 정보</legend>
+                <label for="userid">아이디:</label> <input type="text" id="userid" placeholder="영문으로만 입력해주세요"><br>
+                <label for="password">비밀번호:</label> <input type="password" id="password"><br>
+                성별: 남자 <input type="radio" name="gender" checked> 여자 <input type="radio" name="gender"><br>
+            </fieldset>
+            <fieldset>
+                <legend>부가 정보</legend>
+                취미: 영화감상 <input type="checkbox" name="hobby" checked> 운동 <input type="checkbox" name="hobby"> 음악감상 <input type="checkbox" name="hobby"><br>
+                거주지역: 
+                <select>
+                    <option>서울</option>
+                    <option>경기</option>
+                    <option selected>부산</option>
+                </select><br>
+                프로필 이미지: <input type="file"><br>
+                자기소개: <textarea placeholder="자기소개를 입력해주세요" cols="50" rows="10"></textarea><br>
+            </fieldset>
+            <button type="submit">제출</button>
+            <button type="reset">초기화</button><br>
+            <input type="submit" value="전송">
+            <input type="reset" value="재작성"><br>
+            <input type="image" src="./image/login.png" alt="로그인" width="50" height="50">
+        </form>
+    </body>

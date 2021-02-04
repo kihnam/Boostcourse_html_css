@@ -1,0 +1,71 @@
+<!--table 요소 실습-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>table</title>
+        <style media="screen">
+            td {border: 1px solid black; width: 50px; height: 50px;}
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Monthly Saving </caption>
+            <thead>
+                <th>Monthly</th>
+                <th>Saving</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td rowspan="2">$100</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Sum</td>
+                </tr>
+            </tfoot>
+        </table>
+        <table>
+            <caption>Specification Value</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Grade</th>
+                    <th rowspan="2">Point</th>
+                    <th colspan="2">Strength</th>
+                    <th rowspan="2">Percent</th>
+                </tr>
+                <tr>
+                    <th>kg/mm</th>
+                    <th>lb/in</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hard</td>
+                    <td>0.45</td>
+                    <td>56.2</td>
+                    <td>80.000</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>0.45</td>
+                    <td>49.2</td>
+                    <td>70.000</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Hard</td>
+                    <td>0.45</td>
+                    <td>42.2</td>
+                    <td>60.000</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
