@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>1단 레이아웃</title>
+        <link rel="stylesheet" href="reset.css">
+    </head>
+    <style>
+        html, body, .wrap {
+            height: 100%;
+        }
+        .header {
+            height: 100px;
+            background-color: lightgreen;
+        }
+        .container {
+            position: relative;
+            width: 800px;
+            min-height: 100%;
+            margin: -100px auto;
+            padding: 100px 0;
+            box-sizing: border-box;
+        }
+        .container::after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+        .content {
+            float: left;
+            width: 500px;
+            height: 1300px;
+            background-color: lightblue;
+        }
+        .aside {
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: lightyellow;
+        }
+        .aside::after {
+            position: absolute;
+            top: 100px;
+            bottom: 100px;
+            right: 300px;
+            content: '';
+            width: 5px;
+            background-color: #000;
+        }
+        .footer {
+            height: 100px;
+            background-color: lightsalmon;
+        }
+    </style>
+    <body>
+        <div class="wrap">
+            <div class="header">header</div>
+            <div class="container">
+                <div class="content">content</div>
+                <div class="aside">aside</div>
+            </div>
+            <div class="footer">footer</div>
+        </div>
+    </body>
+</html>

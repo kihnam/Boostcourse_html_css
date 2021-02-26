@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>1단 레이아웃</title>
+        <link rel="stylesheet" href="reset.css">
+    </head>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .wrap {
+            height: 100%;
+            min-height: 800px;
+            text-align: center;
+        }
+        .header {
+            position: fixed;
+            top: 0; right: 0; left: 0;
+            height: 100px;
+            background-color: lightsalmon;
+        }
+        .container {
+            min-height: 100%;
+            padding: 100px 0;
+            box-sizing: border-box;
+        }
+        .content {
+            max-width: 1200px;
+            height: 1300px;
+            margin: 0 auto;
+            background-color: lightseagreen;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            height: 100px;
+            background-color: lightskyblue;
+        }
+    </style>
+    <body>
+        <div class="wrap">
+            <div class="header">header</div>
+            <div class="container">
+                <div class="content">content</div>
+            </div>            
+            <div class="footer">footer</div>
+        </div>
+    </body>
+</html>
