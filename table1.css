@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+table, td, th {
+    border-collapse: collapse;
+}
+
+thead th {
+    border-bottom: 2px solid #000;
+}
+
+th, td {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+table {
+    width: 500px;
+    table-layout: fixed;
+    font-size: 13px;
+}
+
+.col {
+    width: 90px;
+}
+
+thead th {
+    padding: 5px 0;
+}
+
+tbody th {
+    height: 40px;
+}
+
+.th_view,
+.th_rate,
+tbody td {
+    text-align: right;
+}
+
+.th_male,
+.th_female {
+    background-color: #f8f8f8;
+}

@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.visually_hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+table {
+    table-layout: fixed;
+    width: 500px;
+    font-size: 12px;
+}
+
+table, th {
+    border-collapse: collapse;
+    border: 1px solid #eaedef;
+}
+
+table td {
+    border-top: 1px solid #eaedef;
+    border-left: 1px solid #eaedef;
+}
+
+th {
+    height: 25px;
+    color: #777;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.inner {
+    position: relative;
+    height: 80px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.text {
+    display: block;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.date.dimmed {
+    color: #e7e7e7;
+}
+
+.date.holiday,
+.text.holiday {
+    color: red;
+}
+
+.text.anniversary {
+    color: blue;
+}
+
+.lunar {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 9px;
+    color: #bababa;
+}
+
+.today {
+    border: 1px solid #e0e0bf;
+    background-color: #ffffd9;
+}

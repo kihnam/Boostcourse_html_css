@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+body {
+    font-family: '나눔고딕', NanumGothic, Dotum, '돋움', sans-serif;
+    font-size: 14px;
+    line-height: 16px;    
+}
+
+body, ul, ol, li, div, a, button {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tab_wrap {
+    width: 300px;
+    margin: 20px auto 0;
+}
+
+.tab::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.tab_item {
+    float: left;
+}
+
+.tab_button {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    color: #999;
+    background-color: transparent;
+    border: 1px solid #eee;
+    outline: 0;
+    cursor: pointer;
+}
+
+.tab_item + .tab_item .tab_button {
+    width: 101px;
+    margin-left: -1px;
+}
+
+.tab_item .tab_button:hover,
+.tab_item.active .tab_button {
+    font-weight: bold;
+    color: #000;
+    border-bottom: 0; /*액티브된 보더 바텀 안보이게*/
+}
+
+.tab_panel_wrap {
+    display: none;
+}
+
+.tab_panel_wrap.active {
+    display: block;
+}
+
+.tab_panel_wrap {
+    min-height: 350px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-top: 0; /*액티브된 보더 탑 안보이게*/
+    box-sizing: border-box;
+}
+
+.tab_panel_wrap > h3 {
+    position: absolute;
+    z-index: -1;
+    color: transparent;
+}
+
+.tab_panel_item .tab_panel_link {
+    display: block; /*한줄 말줄임 처리 필수요소*/
+    font-size: 14px;
+    line-height: 30px;
+    color: #333;
+    overflow: hidden; /*한줄 말줄임 처리 필수요소*/
+    white-space: nowrap; /*한줄 말줄임 처리 필수요소*/
+    text-overflow: ellipsis; /*한줄 말줄임 처리 필수요소*/
+}
+
+.tab_panel_item:hover .tab_panel_link {
+    font-weight: bold;
+}
