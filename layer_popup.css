@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.popup_layer {
+    position: relative;
+    width: 300px;
+    min-height: 150px;
+    padding-bottom: 50px;
+    background: #fff;
+    z-index: 10;
+}
+
+.text_area {
+    text-align: center;
+    padding: 50px 30px 30px;
+}
+
+.btn_area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+.btn {
+    float: left;
+    width: 50%;
+    height: 100%;
+    border: 0;
+    background: pink;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn.no {
+    background: lightblue;
+}
+
+
+.popup_dimmed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.3;
+}
