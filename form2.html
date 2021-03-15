@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width">
+        <link rel="stylesheet" href="reset.css">
+        <title>Form UI - checkbox, radio</title>
+    </head>
+    <style>
+        body {
+            padding:50px;
+        }
+
+        h1 {
+            margin: 50px 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .check_form,
+        .check_form2,
+        .radio_form {
+            margin-top:20px;
+        }
+
+        .check_form input,
+        .check_form2 input,
+        .radio_form input {
+            position: absolute;
+            overflow: hidden;
+            width: 1px; 
+            height: 1px;
+            margin: -1px;
+            opacity: 0;
+        }
+
+        .check_form label {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            color: transparent;
+            background-color: #666;
+            border-radius: 10px;
+            width: 36px;
+            height: 21px;
+        }
+
+        .check_form label:before {
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            content: '';
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        .check_form input:checked + label {
+            background-color: blue;
+        }
+
+        .check_form input:checked + label:before {
+            left: auto;
+            right: 1px;
+        }
+
+        .check_form2 label:before {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: -1px 5px 0 0;
+            vertical-align: top;
+            background: url(./image/checkbox/checkbox.png) no-repeat 0 0;
+            background-size: 20px;
+            content: '';
+        }
+
+        .check_form2 input:checked + label:before {
+            background-image: url(./image/checkbox/checkbox_on.png);
+        }
+
+        .radio_form label::before {
+            display: inline-block;
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: url(./image/radio/radio.png) no-repeat 0 0;
+            background-size: 20px;
+        }
+
+        .radio_form input:checked + label:before {
+            background-image: url(./image/radio/radio_on.png);
+        }
+    </style>
+    <body>
+        <h1>체크 박스</h1>
+        <div class="check_form">
+            <input type="checkbox" name="" value="" id="check1">
+            <label for="check1">선택1</label>
+        </div>        
+        <div class="check_form">
+            <input type="checkbox" name="" value="" id="check2">
+            <label for="check2">선택2</label>
+        </div>
+        <h1>체크 박스 (img)</h1>
+        <div class="check_form2">
+            <input type="checkbox" name="" value="" id="checkimg1">
+            <label for="checkimg1">선택1</label>
+        </div>        
+        <div class="check_form2">
+            <input type="checkbox" name="" value="" id="checkimg2">
+            <label for="checkimg2">선택2</label>
+        </div>
+        <h1>라디오</h1>
+        <div class="radio_form">
+            <input type="radio" name="radio_form" value="" id="radio1">
+            <label for="radio1">선택1</label>
+        </div>
+        <div class="radio_form">
+            <input type="radio" name="radio_form" value="" id="radio2">
+            <label for="radio2">선택2</label>
+        </div>
+        <div class="radio_form">
+            <input type="radio" name="radio_form" value="" id="radio3">
+            <label for="radio3">선택3</label>
+        </div>
+    </body>

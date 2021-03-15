@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/* header */
+
+header {
+    background-color: black;
+    min-width: 1080px;
+    line-height: 120px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0 auto;
+    padding-left: 40px;
+    width: 1040px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* wrap */
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* menu */
+
+.menu {
+    width: 1000px;
+    margin-bottom: 40px
+}
+
+.menu_list li {
+    float: left;
+    width: 318px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    color: #000;
+}
+
+.menu_list::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.menu_list li:nth-child(2) {
+    margin: 0 14px;
+}
+
+.menu_list a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu_red:hover {
+    font-weight: bold;
+    border-color: #454545;
+    background-color: red;
+}
+
+.menu_green:hover {
+    font-weight: bold;
+    border-color: #454545;
+    background-color: green;
+}
+
+.menu_blue:hover {
+    font-weight: bold;
+    border-color: #454545;
+    background-color: blue;
+}
+
+/* content */
+
+.product {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.product_line {
+    border: 1px solid #454545;
+    margin-top: 15px;
+}
+
+.fruit {
+    width: 980px;
+    padding: 0 10px;
+}
+
+.fruit_list img {
+    float: left;
+    width: 230px;
+}
+
+.fruit ul:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+
+/* footer */
+
+footer {
+    margin: 30px 0;
+    text-align: center;
+}
+
+

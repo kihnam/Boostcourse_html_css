@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width">
+        <link rel="stylesheet" href="reset.css">
+        <title>Form UI - select</title>
+    </head>
+    <style>
+        body {
+            padding: 50px
+        }
+  
+        h1 {
+            margin: 50px 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .select_form {
+            position: relative;
+            width: 198px;
+            height: 38px;
+            border: 1px solid #ddd;
+            line-height: 38px;
+        }
+
+        .select_form::after {
+            top: 16px;
+            right: 10px;
+            display:block;
+            position: absolute;
+            background: url(./image/select/select.png) no-repeat 0 0;
+            width: 13px;
+            height: 7px;
+            content: '';
+        }
+        
+        .select_form select {
+            width: 100%;
+            height: 37px;
+            border: 0 none;
+            font-size: 16px;
+            padding: 0 0 0 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+    </style>
+    <body>
+        <h1>셀렉트 커스텀</h1>
+        <div class="select_form">
+            <select class="" name="">
+                <option value="">선택1</option>
+                <option value="">선택2</option>
+                <option value="">선택3</option>
+            </select>
+        </div>
+    </body>
