@@ -95,7 +95,15 @@ header h1 {
     padding: 0 10px;
 }
 
-.fruit_list img {
+.fruit li + li {
+    margin-left: 20px;
+}
+
+.fruit li:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.fruit_list {
     float: left;
     width: 230px;
 }
@@ -106,12 +114,64 @@ header h1 {
     content: '';
 }
 
+.info {
+    font-size: 20px;
+    color: #1b1d21;
+    text-align: center;
+    height: 120px;
+    padding-top: 20px
+}
+
+.info span {
+    font-size: 28px;
+    color: #1b1d21;
+}
+
+.fruit_img {
+    position: relative;
+}
+
+.fruit_img .discount_rate{
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    background-color: rgba(96, 132, 2, 0.9);
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    top: 0;
+}
+
+.fruit_img .discount_time {
+    display: block;
+    font-size: 12px;
+}
+
+
+.visually_hidden {
+    visibility: hidden;
+}
+
 
 /* footer */
 
 footer {
-    margin: 30px 0;
+    border-top: 1px solid #d1d1d1;
     text-align: center;
 }
 
+
+footer address {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #999;
+    font-style: normal;
+}
+
+footer p {
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: #000;
+    margin-top: 10px;
+}
 
