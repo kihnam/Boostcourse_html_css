@@ -131,31 +131,40 @@ header h1 {
     position: relative;
 }
 
-.fruit_img .discount_rate{
+.discount {
+    /* display: none; */
     position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
     width: 230px;
     height: 230px;
+    line-height: 230px;
     background-color: rgba(96, 132, 2, 0.9);
-    font-size: 40px;
     color: #fff;
     text-align: center;
-    top: 0;
+    text-decoration: none;
 }
 
-.fruit_img .discount_time {
+.fruit_img:hover > .discount {
     display: block;
-    font-size: 12px;
 }
 
-
-.visually_hidden {
-    visibility: hidden;
+.discount div {
+    width: 230px;
+    height: 230px;
 }
 
+.discount_rate {
+    font-size: 50px;
+}
+
+.discount_time {
+    font-size: 15px;
+}
 
 /* footer */
 
 footer {
+    min-width: 1080px;
     border-top: 1px solid #d1d1d1;
     text-align: center;
 }
