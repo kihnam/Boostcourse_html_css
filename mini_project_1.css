@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/* font */ 
+
+body {
+    font-family: '나눔고딕', NanumGothic, '돋움', Dotum, sans-serif;
+}
+
 /* header */
 
 header {
@@ -83,11 +89,9 @@ header h1 {
     font-size: 20px;
     color: #000;
     font-weight: bold;
-}
-
-.product_line {
-    border: 1px solid #454545;
-    margin-top: 15px;
+    border-bottom: 1px solid #454545;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .fruit {
@@ -122,6 +126,12 @@ header h1 {
     padding-top: 20px
 }
 
+.info p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .info span {
     font-size: 28px;
     color: #1b1d21;
@@ -132,25 +142,21 @@ header h1 {
 }
 
 .discount {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
-    width: 230px;
-    height: 230px;
-    line-height: 230px;
     background-color: rgba(96, 132, 2, 0.9);
     color: #fff;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
 }
 
 .fruit_img:hover > .discount {
     display: block;
 }
 
-.discount div {
-    width: 230px;
-    height: 230px;
+.discount_box {
+    padding-top: 80px;
 }
 
 .discount_rate {
@@ -159,6 +165,15 @@ header h1 {
 
 .discount_time {
     font-size: 15px;
+}
+
+.visually_hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
 
 /* footer */
