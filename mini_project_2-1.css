@@ -1,0 +1,114 @@
+@charset "utf-8";
+html {
+    font-family: '나눔고딕', NanumGothic, '돋움', Dotum, sans-serif;
+}
+
+body {
+    min-width: 1080px;
+    background: url(./image/section_store.jpg) no-repeat 0 0;
+    background-position: center;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    height: 66px;
+    line-height: 66px;
+    background-color: rgba(64,64,64,0.75)
+}
+
+.header_box {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    top: 0; left: 20px;
+}
+
+.sign_up {
+    position: absolute;
+    top: 0; right: 40px;
+}
+
+.sign_up:hover {
+    font-weight: bold;
+}
+
+/* content */
+
+.wrap {
+    margin-top: 280px;
+}
+
+.fruit_list {
+    width: 980px;
+    margin: 0 auto 100px;
+}
+
+.fruit_list li {
+    float: left;
+}
+
+.fruit_list::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.fruit_list li + li {
+    margin-left: 20px;
+}
+
+.fruit_list li:nth-child(5) {
+    margin-left: 0;
+}
+
+.fruit_info {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.fruit_name {
+    width: px;
+    font-size: 18px;
+    color: #1b1b21;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+.fruit_cost {
+    font-size: 28px;
+    color: #1b1d21;
+}
+
+
+/* footer */
+
+footer {
+    border-top: 1px solid #d1d1d1;
+    text-align: center;
+    background-color: #fff;
+    height: 107px;
+}
+
+
+footer address {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #999;
+    font-style: normal;
+}
+
+footer p {
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: #000;
+    margin-top: 10px;
+}

@@ -1,0 +1,156 @@
+@charset "utf-8";
+html {
+    font-family: '나눔고딕', NanumGothic, '돋움', Dotum, sans-serif;
+}
+
+body {
+    min-width: 1080px;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    height: 66px;
+    line-height: 66px;
+    background-color: rgba(64,64,64,0.75);
+}
+
+.header_box {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    top: 0; left: 20px;
+}
+
+.sign_up {
+    position: absolute;
+    top: 0; right: 40px;
+}
+
+.sign_up:hover {
+    font-weight: bold;
+}
+
+
+/*form*/
+
+section {
+    margin: 100px 0 30px
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.form_wrap {
+    margin: 0 auto 30px;
+    width: 940px;
+    padding: 30px;
+}
+
+.form {
+    width: 908px;
+    padding: 15px;
+}
+
+.form_title {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form, .form_input, .form_dob, 
+.form_number, .form_intro, .wrap {
+    border: 1px solid #e4e4e4;
+}
+
+.form_label {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    margin: 8px 0;
+}
+
+.form_input {
+    width: 900px;    
+    height: 25px;
+    font-size: 12px;
+    color: #000;
+}
+
+.form_dob {
+    font-size: 12px;
+    color: #000;
+    width: 298px;
+    height: 25px
+}
+
+.form_check {
+    font-size: 12px;
+    color: #000;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.form_number {
+    width: 700px;
+    height: 25px;
+    margin-bottom: 3px;
+}
+
+.form_verify {
+    border: 1px solid #08a600;
+    background-color: #4ec53d;
+    font-size: 12px;
+    color: #fff;
+    width: 194px;
+    height: 31px;
+}
+
+.form_intro {
+    width: 904px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.form_submit {
+    border: 1px solid #08a600;
+    background-color: #4ec53d;
+    font-size: 16px;
+    color: #fff;
+    width: 906px;
+    height: 40px;
+}
+
+/* footer */
+
+footer {
+    border-top: 1px solid #d1d1d1;
+    text-align: center;
+    background-color: #fff;
+    height: 107px;
+}
+
+
+footer address {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #999;
+    font-style: normal;
+}
+
+footer p {
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: #000;
+    margin-top: 10px;
+}

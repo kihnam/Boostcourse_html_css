@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="mini_project_2-2.css">
+        <title>푸드위드 스토어</title>
+    </head>
+    <body>
+        <header>
+            <div class="header_box">
+                <a href="#top" class="logo">
+                <img src="./image/logo.png">
+                </a>
+                <p class="sign_up">회원가입</p>
+            </div>
+        </header>
+        <section>
+            <div class="wrap" id="top">
+                <form class="form_wrap">
+                    <div class="form_title">회원가입</div>
+                    <fieldset class="form">          
+                        <label for="userid" class="form_label">아이디</label>
+                        <input type="text" id="userid" class="form_input" name="user_id">
+                        <label for="password" class="form_label">비밀번호</label>
+                        <input type="password" id="password" class="form_input" name="user_password">
+                        <label for="name" class="form_label">이름</label>
+                        <input type="text" id="name" class="form_input" name="user_name">                               
+                        <label for="dateofbirth" class="form_label">생년월일</label><br>
+                        <select class="form_dob" id="dateofbirth" name="dateofbirth">
+                            <option>년도</option>
+                        </select>
+                        <select class="form_dob" name="dateofbirth">
+                            <option>월</option>
+                        </select>
+                        <select class="form_dob" name="dateofbirth">
+                            <option>일</option>
+                        </select>                            
+                        <div class="form_label">성별</div><br>
+                        <div class="form_check">
+                            <label for="gender_male" class="form_check"><input type="radio" name="gender" id="gender_male">남자</label>
+                        </div>
+                        <div class="form_check">
+                            <label for="gender_female" class="form_check"><input type="radio" name="gender" id="gender_female">여자</label>
+                        </div><br>
+                        <label for="email" class="form_label">이메일</label>
+                        <input type="text" id="email" placeholder="이메일 주소에 '@'를 포함해주세요." class="form_input" name="email"><br>
+                        <label for="number" class="form_label">휴대전화</label><br>
+                        <input type="number" id="number" placeholder="숫자만 입력해주세요" class="form_number" name="phonenumber">
+                        <button type="button" class="form_verify">인증번호 받기</button>
+                        <input type="text" placeholder="인증번호를 입력해주세요" class="form_input" name="verify">
+                        <div class=form_label>취미</div><br>
+                        <div class="form_check">
+                            <label for="exercise" class="form_check"><input type="checkbox" name="hobby" id="exercise">운동</label>
+                        </div>
+                        <div class="form_check">
+                            <label for="cook" class="form_check"><input type="checkbox" name="hobby" id="cook">요리</label>
+                        </div> 
+                        <div class="form_check">
+                            <label for="travel" class="form_check"><input type="checkbox" name="hobby" id="travel">여행</label>
+                        </div>
+                        <div class="form_check">
+                            <label for="game" class="form_check"><input type="checkbox" name="hobby" id="game">게임</label>
+                        </div>
+                        <div class="form_check">
+                            <label for="computer" class="form_check"><input type="checkbox" name="hobby" id="computer">컴퓨터</label>
+                        </div> 
+                        <div class="form_check">
+                            <label for="music" class="form_check"><input type="checkbox" name="hobby" id="music">음악</label>
+                        </div> 
+                        <div class="form_check">
+                            <label for="movie" class="form_check"><input type="checkbox" name="hobby" id="movie">영화</label>
+                        </div> 
+                        <div class="form_check">
+                            <label for="book" class="form_check"><input type="checkbox" name="hobby" id="book">독서</label>
+                        </div><br>
+                        <label for="intro" class="form_label">가입인사</label>
+                        <textarea id="intro" cols="130" rows="6" class="form_intro" name="introduction"></textarea>
+                        <button type="submit" class="form_submit" name="submit">가입하기</button>
+                    </fieldset>            
+                </form> 
+            </div>
+        </section>
+        <footer>
+                <address>주소: 경기도 성남시 분당구, E-MAIL: honggildong@naver.com</address>
+                <p>Copyright(C) 남쿨. All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
