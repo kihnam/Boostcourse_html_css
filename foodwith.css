@@ -27,6 +27,7 @@ body {
 
 /* Moblie */
 
+/* Main */
 .menu {
     background-color: #fff;
 }
@@ -352,6 +353,76 @@ body {
 .footer_item {
     display: inline-block;
     padding: 15px 5px;
+}
+
+/* View */
+
+.view_top_wrap {
+    padding: 0 15px;
+}
+
+.view_table {
+    width: 100%;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.table_title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+
+.table_first {
+   font-size: 14px;
+   color: #767676;
+   font-weight: bold;
+}
+
+.table_second {
+    font-size: 14px;
+    color: #666;
+}
+
+.table_number {
+    font-size: 14px;
+    color: #666;
+    font-family: tahoma;
+}
+
+.food_title {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+.food_link {
+    font-size: 14px;
+    color: #3b9a7b;
+}
+
+.food_content {
+    font-size: 14px;
+    color: #666;
+    line-height: 25px;
+}
+
+.recipe_list li {
+    list-style: decimal;
+    list-style-position: inside;
+    font-size: 14px;
+    color: #666;
+    line-height: 25px;
+}
+
+.food_table {
+    border: 1px solid #c1c1c1;
+    margin: 20px 0;
+}
+
+.view_bottom_wrap {
+    padding: 0 15px;
 }
 
 /* Tablet */
