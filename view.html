@@ -1,97 +1,778 @@
-<!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/foodwith.css">
-        <title>Project C</title>
-    </head>
-    <body>
-        <header class="menu">
-            <div class="menu_wrap">
-                <a href="#" class="logo"><span class="blind">로고</span></a>
-                <a href="#" class="gnb_menu"><span class="blind">메뉴</span></a>
-                <nav class="menu_item">
-                    <a href="#">About</a>
-                    <a href="#">Work</a>
-                    <a href="#">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <section class="view_top">
-            <div class="view_top_wrap">
-                <table class="view_table">
-                    <caption class="table_title">딸기 케이크</caption>
-                    <tr>
-                        <td class="table_first">CHEF</td>
-                        <td class="table_second">FULLMOON</td>
-                    </tr>
-                    <tr>
-                        <td class="table_first">CATEGORY</td>
-                        <td class="table_second">디저트</td>
-                    </tr>
-                    <tr>
-                        <td class="table_first">DATE</td>
-                        <td class="table_number">2018.02.02</td>
-                    </tr>
-                    <tr>
-                        <td class="table_first">VIEW</td>
-                        <td class="table_number">2,356</td>
-                    </tr>
-                </table>
-                <div>
-                    <div class="food_info">
-                        <h3 class="food_title">음식정보</h3>
-                        <p class="food_content">딸기를 주재료로 쓴 케이크 딸기를 토핑으로 쓰거나, 딸기를 갈아서 반죽에 넣은 케이크</p>
-                        <a class="food_link" href="https://terms.naver.com" target="_blank">https://terms.naver.com</a>
-                    </div>
-                    <div class="food_prep">
-                        <h3 class="food_title">재료 및 분량</h3>
-                        <p class="food_content">딸기, 밀가루 290g, 달걀 1개, 크림치즈 200g, 설탕 70g, 설탕 시럽, 생크림 160g, 물 100mL</p>
-                    </div>
-                    <div class="food_recipe">
-                        <h3 class="food_title">만드는 법</h3>
-                        <ol class="recipe_list">
-                            <li>밀가루, 달걀, 물을 볼에 넣고 잘 섞어준다.</li>
-                            <li>냄비에 반죽을 넣고 약한 불에서 20분간 익혀준다. 잔열로 5분간 더 익혀준다. 다 익었으면 꺼낸 뒤 한 김 식힌다.</li>
-                            <li>크림치즈 200g을 부드럽게 풀고 설탱 70g을 넣고 섞는다.</li>
-                            <li>케이크 시트를 3등분하여 1개를 밑에 깔고 설탕시럽을 바른다.</li>
-                            <li>반으로 자른 딸기를 올려준 뒤, 만들었던 치즈크림을 딸기가 덮어질 정도로 채운다.</li>
-                            <li>다시 케이크 시트를 올리고 설탕 시럽을 바른다.</li>
-                            <li>시트 위에 생크림을 얇고 평평히 발라준 뒤 크림이 굳을 수 있게 냉장실에 3시간 정도 넣어준다.</li>
-                            <li>케이크가 굳었으면 딸기를 올려 장식해준다.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <section class="view_bottom">
-                <div class="view_bottom_wrap">
-                    <table class="food_table">
-                        <tr>
-                            <td>가열시간</td>
-                            <td>조리과정</td>
-                            <td>불조절</td>
-                        </tr>
-                        <tr>
-                            <td>재료준비</td>
-                            <td>밀가루, 계란, 물로 반죽 만들기</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>20min</td>
-                            <td>반죽 익히기</td>
-                            <td>약한불</td>
-                        </tr>
-                        <tr>
-                            <td>5min</td>
-                            <td>반죽 뜸들인 후 완성</td>
-                            <td>잔열</td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-        </section>
-        <footer></footer>
-    </body>
-</html>
+@charset "UTF-8";
+
+/* Common */
+
+body {
+    font-family: '나눔고딕', NanumGothic, '돋움', Dotum, sans-serif ;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.clear {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Moblie */
+
+/* Main */
+.menu {
+    background-color: #fff;
+}
+
+.menu_wrap {
+    height: 50px;
+}
+
+.logo {
+    float: left;
+    display: block;
+    width: 114px;
+    height: 50px;
+    background: url(../image/logo_m.png) no-repeat 50% 50%;
+    background-size: 80%;
+}
+
+.gnb_menu {
+    float: right;
+    display: block;
+    width: 46px;
+    height: 50px;
+    background: url(../image/icon_menu.png) no-repeat 50% 50%;
+    background-size: 50%;
+}
+
+.menu_item {
+    visibility: hidden;
+    position: relative;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.menu_item a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.menu_item {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.gnb_menu:hover + .menu_item {
+    visibility: visible;
+}
+
+.top {
+    background-color: #ffee02;
+}
+
+.top_wrap {
+    display: block;
+    padding: 20px 35px 40px;
+    text-decoration: none;
+}
+
+.top_banner {
+    margin: 0 auto;
+    width: 250px;
+    height: 180px;
+    background: url(..//image/banner_strawberry.png) no-repeat 50% 50%;
+    background-size: 100%;
+}
+
+.top_text {
+    font-size: 22px;
+    color: #333;
+    max-height: 56px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 20px;
+}
+
+.top_line {
+    width: 40px;
+    margin: 0 auto;
+    border-top: 1px solid #000;
+}
+
+.top_profile {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.profile_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 80%;
+    background-image: url(../image/thumbnail_profile_none.jpg);
+}
+
+.profile_text {
+    vertical-align: 70%;
+}
+
+.middle {
+    padding: 15px 0;
+    background-color: #f0f0f0;
+}
+
+.middle_wrap {
+    padding: 0 15px;
+}
+
+.list_item {
+    display: block;
+    text-decoration: none;
+}
+
+.list_img {
+    width: 100%;
+}
+
+.list_text {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.img_wrap {
+    position: relative;
+}
+
+.img_wrap:after {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    content: '';
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.show_more {
+    display: block;
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+
+.arrow_more {
+    width: 20px;
+    height: 20px;
+    vertical-align: -5%;
+}
+
+.bottom {
+    background-color: #f4f5f7;
+}
+
+.form_wrap {
+    padding: 20px 15px;
+}
+
+.title_main, .title_sub {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.title_sub {
+    font-size: 14px;
+}
+
+.bottom_form {
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+}
+
+.label_id {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form_submit {
+    float: right;
+    border: 2px solid #bdbdbd;
+    background-color: #e9e9e9;
+    font-size: 11px;
+    color: #666;
+}
+
+.form_id, .form_email {
+    font-size: 14px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 10px;
+}
+
+.form_id, .form_email, .text_area::placeholder {
+    font-size: 14px;
+    color: #acacac;
+}
+
+.form_id {
+    width: 99%;
+    margin-top: 15px;
+}
+
+.label_email {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.form_email {
+    float: left;
+    width: 49%;
+}
+
+.email_at {
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.email_select {
+    float: right;
+    font-size: 14px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 10px;
+    width: 43%;
+    appearance: none;
+    background: url(../image/icon_arrow_email.png) no-repeat 97% 30%/14px auto;
+}
+
+.text_area {
+    width: 98%;
+    resize: none;
+    margin-top: 15px;
+    border: 1px solid #c1c1c1;
+}
+
+.bottom_form::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.bottom_list {
+    padding: 20px 15px;
+    background-color: #f0f0f0;
+}
+
+.announce_title, .creators_title, .partners_title {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.announce_item {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.announce_text {
+    display: block;
+    width: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.announce_showmore {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sub_first {
+    font-size: 14px;
+    color: #333;
+    border-right: 1px solid #c1c1c1;
+    padding-right: 10px;
+}
+
+.sub_second {
+    font-size: 14px;
+    color: #333;
+    padding-left: 5px;
+}
+
+.footer_box {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.footer_item {
+    display: inline-block;
+    padding: 15px 5px;
+}
+
+/* View */
+
+.view_top_wrap {
+    padding: 0 15px;
+}
+
+.view_table {
+    width: 100%;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.table_title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+
+.table_first {
+   font-size: 14px;
+   color: #767676;
+   font-weight: bold;
+}
+
+.table_second {
+    font-size: 14px;
+    color: #666;
+}
+
+.table_number {
+    font-size: 14px;
+    color: #666;
+    font-family: tahoma;
+}
+
+.food_title {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+.food_link {
+    font-size: 14px;
+    color: #3b9a7b;
+}
+
+.food_content {
+    font-size: 14px;
+    color: #666;
+    line-height: 25px;
+}
+
+.recipe_list li {
+    list-style: decimal;
+    list-style-position: inside;
+    font-size: 14px;
+    color: #666;
+    line-height: 25px;
+}
+
+.view_bottom_wrap {
+    padding: 0 15px;
+}
+
+.food_table {
+    border: 1px solid #c1c1c1;
+    background-color: #eaeaea;
+    margin: 20px 0;
+}
+
+
+/* Tablet */
+
+@media screen and (min-width:768px) {
+    .menu_wrap {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 0;
+    }
+
+    .gnb_menu {
+        display: none;
+    }
+
+    .menu_item {
+        position: absolute;
+        right: 0;
+        visibility: visible;
+        padding: 0;
+    }
+
+    .menu_item a {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        color: #333;
+        padding: 0 10px;
+    }
+
+    .top_wrap {
+        position: relative;
+        height: 330px;
+        padding: 0 34px;
+    }
+
+    .top_banner {
+        position: absolute;
+        display: block;
+        top: 39px;
+        right: 34px;
+        width: 350px;
+        height: 252px;
+    }
+
+    .top_text {
+        position: absolute;
+        padding: 0 384px 0 0;
+        top: 80px;
+        font-size: 32px;
+        color: #333;
+        max-height: 120px;
+        line-height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+
+    .top_line {
+        position: absolute;
+        bottom: 100px;
+    }
+
+    .top_profile {
+        position: absolute;
+        bottom: 30px;
+    }
+
+    .profile_text {
+        font-size: 18px;
+    }
+
+    .middle {
+        padding: 30px 0;
+    }
+
+    .middle_wrap {
+        padding: 0 34px;
+    }
+
+    .middle_wrap::after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+
+    .list_wrap {
+        float: left;
+        width: 48.5%;
+    }
+
+    .list_wrap + .list_wrap {
+        margin-left: 20px;
+    }
+
+    .list_wrap:nth-child(2n+1) {
+        margin-left: 0;
+    }
+
+    .list_text {
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .show_more {
+        padding: 0 34px;
+    }
+    
+    .form_wrap {
+        padding: 30px 34px;
+    }
+
+    .title_main {
+        font-size: 30px;
+    }
+
+    .title_sub {
+        font-size: 18px;
+    }
+
+    .bottom_form {
+        padding: 50px;
+    }
+
+    .form_submit {
+        font-size: 15px;
+    }
+
+    .bottom_list {
+        padding: 20px 34px;
+    }
+
+    .creators {
+        padding: 20px 0;
+    }
+
+    .creators_title, .partners_title {
+        display: inline-block;
+        padding: 0 20px 0 0;
+    }
+
+    .creators_title, .partners_title, .creators_item, .partners_item {
+        float: left;
+    }
+
+    .creators::after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+
+    .partners::after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+}
+
+/* PC */
+
+@media screen and (min-width:1024px) {
+    .menu_wrap {
+        width: 988px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .menu_item {
+        line-height: 70px;
+    }
+
+    .menu_item a:hover {
+        font-weight: bold;
+    }
+
+    .top_wrap {
+        width: 988px;
+        height: 420px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .top_banner {
+        position: absolute;
+        right: 0;
+        width: 500px;
+        height: 360px;
+    }
+
+    .top_text {
+        position: absolute;
+        top: 80px;
+        padding: 0;
+        font-size: 40px;
+        color: #333;
+        width: 460px;
+        max-height: 156px;
+        line-height: 52px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+
+    .top_line {
+        position: absolute;
+        bottom: 150px;
+    }
+
+    .top_profile {
+        position: absolute;
+        bottom: 70px;
+    }
+
+    .middle {
+        background-color: #f0f0f0;
+    }
+
+    .middle_wrap {
+        width: 988px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .list_wrap {
+        width: 31.8%;
+        margin-bottom: 20px;
+    }
+
+    .list_wrap + .list_wrap {
+        margin-left: 20px;
+    }
+
+    .list_wrap:nth-child(3n+1) {
+        margin-left: 0;
+    }
+
+    .list_item {
+        position: relative;
+    }
+
+    .img_wrap {
+        width: 316px;
+        height: 316px;
+    }
+
+    .img_wrap:hover {
+        opacity: 30%;
+    }
+
+    .list_item:focus > .img_wrap {
+        opacity: 30%;
+    }
+
+    .img_wrap:hover + .list_text {
+        visibility: visible;
+    }
+
+    .list_item:focus > .list_text {
+        visibility: visible;
+    }
+
+    .list_text {
+        visibility: hidden;
+        position: absolute;
+        width: 316px;
+        height: 316px;
+        top: 256px;
+        right: -2px;
+        margin: 0;
+        height: 60px;
+        font-size: 18px;
+        color: #333;
+        background-color: #fff;
+    }
+
+    .show_more {
+        padding: 0;
+    }
+
+    .form_wrap {
+        background: url(../image/bg_pencil.png) no-repeat 0 300px;
+        width: 988px;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    .bottom_list {
+        background-color: #f0f0f0;
+    }
+
+    .form_title {
+        float: left;
+        width: 398px;
+    }
+
+    .title_main {
+        font-size: 42px;
+        margin-bottom: 30px;
+        padding-right: 20px;
+    }
+
+    .title_sub {
+        font-size: 18px;
+    }
+
+    .title_main, .title_sub {
+        text-align: unset;
+        color: #333;
+    }
+
+    .bottom_form {
+        float: right;
+        width: 490px;
+        padding-bottom: 40px;
+    }
+
+    .form_wrap::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+    .test2 {
+        background-color: #f4f5f7;
+    }
+
+    .test1 {
+        background-color: #f0f0f0;
+        padding-bottom: 20px;
+    }
+
+    .bottom_list {
+        width: 988px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
