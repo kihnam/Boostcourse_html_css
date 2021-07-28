@@ -416,13 +416,25 @@ body {
     line-height: 25px;
 }
 
+.view_bottom_wrap {
+    padding: 0 15px;
+}
+
 .food_table {
     border: 1px solid #c1c1c1;
+    background-color: #eaeaea;
     margin: 20px 0;
 }
 
-.view_bottom_wrap {
-    padding: 0 15px;
+.cake_img {
+    width: 100%;
+}
+
+.cake_title {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* Tablet */
