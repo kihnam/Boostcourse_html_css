@@ -363,11 +363,13 @@ body {
 
 .view_table {
     width: 100%;
+    padding: 50px 0;
     border-bottom: 1px solid #c1c1c1;
 }
 
 .table_title {
-    margin-bottom: 20px;
+    padding: 20px 0;
+    text-align: left;
     font-size: 28px;
     color: #333;
     font-weight: bold;
@@ -377,6 +379,8 @@ body {
    font-size: 14px;
    color: #767676;
    font-weight: bold;
+   width: 120px;
+   padding-bottom: 10px;
 }
 
 .table_second {
@@ -388,6 +392,14 @@ body {
     font-size: 14px;
     color: #666;
     font-family: tahoma;
+}
+
+.table_last {
+    font-size: 14px;
+    color: #767676;
+    font-weight: bold;
+    width: 120px;
+    padding-bottom: 30px;
 }
 
 .food_title {
