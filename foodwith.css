@@ -406,7 +406,7 @@ body {
     font-size: 16px;
     color: #333;
     font-weight: bold;
-    margin: 15px 0 10px 0;
+    margin: 25px 0 10px 0;
 }
 
 .food_link {
@@ -433,9 +433,32 @@ body {
 }
 
 .food_table {
-    border: 1px solid #c1c1c1;
+    width: 100%;
+    margin: 30px 0;
     background-color: #eaeaea;
-    margin: 20px 0;
+}
+
+.food_table_col {
+    width: 33%;
+}
+
+.food_table_title {
+    border: 1px solid #c1c1c1;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.food_table_content {
+    border: 1px solid #c1c1c1;
+    font-size: 14px;
+    color: #666;
+    vertical-align: middle;
+}
+
+.food_table_content:nth-child(2) {
+    line-height: 40px;
 }
 
 .cake_img {
