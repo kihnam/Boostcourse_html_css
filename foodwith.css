@@ -481,6 +481,7 @@ body {
 /* Tablet */
 
 @media screen and (min-width:768px) {
+    /* Main */
     .menu_wrap {
         position: relative;
     }
@@ -639,6 +640,37 @@ body {
         display: block;
         clear: both;
         content: '';
+    }
+
+    /* View */
+    
+    .table_title {
+        font-size: 36px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .test_1 {
+        width: 50%;
+    }
+
+    .test_2 {
+        width: 50%;
+    }
+
+    .table_first {
+    }
+
+    .table_second {
+    }
+
+    .food_table_col:nth-child(1) {
+        width: 10%;
+    }
+
+    .cake_img_box {
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
 
