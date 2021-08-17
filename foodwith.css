@@ -365,7 +365,10 @@ body {
 .view_table {
     width: 100%;
     padding: 50px 0;
-    border-bottom: 1px solid #c1c1c1;
+}
+
+.view_table_second {
+    display: none;
 }
 
 .table_title {
@@ -401,6 +404,10 @@ body {
     font-weight: bold;
     width: 120px;
     padding-bottom: 30px;
+}
+
+.test_5 {
+    border-top: 1px solid #c1c1c1;
 }
 
 .food_title {
@@ -481,7 +488,9 @@ body {
 /* Tablet */
 
 @media screen and (min-width:768px) {
+    
     /* Main */
+
     .menu_wrap {
         position: relative;
     }
@@ -644,24 +653,14 @@ body {
 
     /* View */
     
+    .view_table {
+        display: none;
+    }
+
     .table_title {
         font-size: 36px;
         color: #333;
         font-weight: bold;
-    }
-
-    .test_1 {
-        width: 50%;
-    }
-
-    .test_2 {
-        width: 50%;
-    }
-
-    .table_first {
-    }
-
-    .table_second {
     }
 
     .food_table_col:nth-child(1) {
@@ -857,5 +856,25 @@ body {
         width: 988px;
         margin: 0 auto;
         padding: 0;
+    }
+
+    /* View */
+
+    .view_top_wrap {
+        width: 988px;
+        margin: 0 auto;
+    }
+
+    .view_bottom_wrap {
+        width: 988px;
+        margin: 0 auto;
+    }
+
+    .menu_item {
+        font-size: 22px;
+    }
+
+    .menu_item_hover:hover {
+        font-weight: bold;
     }
 }
