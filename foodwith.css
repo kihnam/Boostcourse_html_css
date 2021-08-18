@@ -657,14 +657,18 @@ body {
         display: none;
     }
 
+    .view_table_second {
+        display: block;
+    }
+
+    .table_second {
+        padding-right: 130px;
+    }
+
     .table_title {
         font-size: 36px;
         color: #333;
         font-weight: bold;
-    }
-
-    .food_table_col:nth-child(1) {
-        width: 10%;
     }
 
     .cake_img_box {
@@ -676,6 +680,9 @@ body {
 /* PC */
 
 @media screen and (min-width:1024px) {
+
+    /* Main */
+
     .menu_wrap {
         width: 988px;
         height: 70px;
@@ -860,6 +867,14 @@ body {
 
     /* View */
 
+    .menu, .footer_box {
+        background-color: #fff
+    }
+
+    .view_top, .view_bottom {
+        background-color: #f0f0f0;
+    }
+
     .view_top_wrap {
         width: 988px;
         margin: 0 auto;
@@ -869,12 +884,8 @@ body {
         width: 988px;
         margin: 0 auto;
     }
-
+    
     .menu_item {
         font-size: 22px;
-    }
-
-    .menu_item_hover:hover {
-        font-weight: bold;
     }
 }
