@@ -241,8 +241,7 @@ body {
     padding-bottom: 10px;
 }
 
-.form_id, .form_email, .text_area::placeholder {
-    font-size: 14px;
+.form_email::placeholder, .form_id::placeholder, .text_area::placeholder {
     color: #acacac;
 }
 
@@ -884,7 +883,7 @@ body {
         width: 988px;
         margin: 0 auto;
     }
-    
+
     .menu_item {
         font-size: 22px;
     }
