@@ -361,12 +361,12 @@ body {
     background-color: #f0f0f0;
 }
 
-.view_table {
+.view_table_mobile {
     width: 100%;
     padding: 50px 0;
 }
 
-.view_table_second {
+.view_table_tablet_pc {
     display: none;
 }
 
@@ -386,14 +386,12 @@ body {
    padding-bottom: 10px;
 }
 
-.table_second {
+.table_second, .table_number {
     font-size: 14px;
     color: #666;
 }
 
 .table_number {
-    font-size: 14px;
-    color: #666;
     font-family: tahoma;
 }
 
@@ -405,7 +403,7 @@ body {
     padding-bottom: 30px;
 }
 
-.test_5 {
+.food_info_wrap {
     border-top: 1px solid #c1c1c1;
 }
 
@@ -427,10 +425,6 @@ body {
     line-height: 25px;
 }
 
-.food_recipe {
-    padding-bottom: 30px;
-}
-
 .recipe_list li {
     list-style: decimal;
     list-style-position: inside;
@@ -440,13 +434,14 @@ body {
 }
 
 .view_bottom_wrap {
-    padding: 0 15px;
+    padding: 30px 15px;
     background-color: #f0f0f0;
 }
 
 .food_table {
     width: 100%;
     background-color: #eaeaea;
+    padding-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -460,6 +455,7 @@ body {
     color: #333;
     font-weight: bold;
     line-height: 30px;
+    text-align: left;
 }
 
 .food_table_content {
@@ -470,7 +466,7 @@ body {
 }
 
 .food_table_content:nth-child(2) {
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .cake_img {
