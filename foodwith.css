@@ -292,7 +292,7 @@ body {
 }
 
 .bottom_list {
-    padding: 20px 15px;
+    padding: 0 15px 15px 15px;
     background-color: #f0f0f0;
 }
 
@@ -300,7 +300,7 @@ body {
     display: block;
     font-size: 16px;
     color: #333;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .announce_item {
@@ -605,8 +605,12 @@ body {
         font-size: 15px;
     }
 
+    .bottom_list_title {
+        padding: 20px 0
+    }
+
     .bottom_list {
-        padding: 20px 34px;
+        padding: 0 34px 20px 34px;
     }
 
     .creators {
@@ -726,6 +730,7 @@ body {
 
     .middle {
         background-color: #f0f0f0;
+        padding: 30px 0;
     }
 
     .middle_wrap {
@@ -786,10 +791,6 @@ body {
         background-color: #fff;
     }
 
-    .show_more {
-        padding: 0;
-    }
-
     .form_wrap {
         background: url(../image/bg_pencil.png) no-repeat 0 300px;
         width: 988px;
@@ -797,8 +798,9 @@ body {
         padding: 40px 0;
     }
 
-    .bottom_list {
+    .bottom_announce {
         background-color: #f0f0f0;
+        padding-bottom: 20px;
     }
 
     .form_title {
@@ -833,19 +835,14 @@ body {
         clear: both;
     }
 
-    .test2 {
-        background-color: #f4f5f7;
-    }
-
-    .test1 {
-        background-color: #f0f0f0;
-        padding-bottom: 20px;
-    }
-
     .bottom_list {
         width: 988px;
         margin: 0 auto;
         padding: 0;
+    }
+
+    .footer_box {
+        padding: 10px 0 30px 0;
     }
 
     /* View */
