@@ -858,11 +858,13 @@ body {
     .view_top_wrap {
         width: 988px;
         margin: 0 auto;
+        padding: 0;
     }
 
     .view_bottom_wrap {
         width: 988px;
         margin: 0 auto;
+        padding: 30px 0;
     }
 
     .menu_item {
