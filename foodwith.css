@@ -372,7 +372,7 @@ body {
     font-weight: bold;
 }
 
-.table_first {
+.table_first, .table_last {
    font-size: 14px;
    color: #767676;
    font-weight: bold;
@@ -390,10 +390,6 @@ body {
 }
 
 .table_last {
-    font-size: 14px;
-    color: #767676;
-    font-weight: bold;
-    width: 120px;
     padding-bottom: 30px;
 }
 
@@ -408,15 +404,14 @@ body {
     margin: 25px 0 10px 0;
 }
 
-.food_link {
-    font-size: 14px;
-    color: #3b9a7b;
-}
-
 .food_content {
     font-size: 14px;
     color: #666;
     line-height: 25px;
+}
+
+.food_link {
+    color: #3b9a7b;
 }
 
 .recipe_list li {
@@ -425,6 +420,8 @@ body {
     font-size: 14px;
     color: #666;
     line-height: 25px;
+    padding-left: 1.5em;
+    text-indent: -1.4em;
 }
 
 .view_bottom_wrap {
@@ -457,6 +454,7 @@ body {
     font-size: 14px;
     color: #666;
     vertical-align: middle;
+    padding-left: 5px;
 }
 
 .food_table_content:nth-child(2) {
@@ -554,11 +552,11 @@ body {
     }
 
     .middle {
-        padding: 30px 0;
+        padding: 30px 34px;
     }
 
-    .middle_wrap {
-        padding: 0 34px;
+    .middle_wrap, .show_more {
+        padding: 0;
     }
 
     .middle_wrap::after {
@@ -587,10 +585,6 @@ body {
         font-size: 18px;
     }
 
-    .show_more {
-        padding: 0 34px;
-    }
-    
     .form_wrap {
         padding: 30px 34px;
     }
